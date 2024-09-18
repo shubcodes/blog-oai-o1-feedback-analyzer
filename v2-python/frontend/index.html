@@ -1,0 +1,33 @@
+<!-- frontend/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fireworks AI Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fireworks AI Chat</h1>
+        
+        <div class="chat-section">
+            <h2>Chat</h2>
+            <div id="chat-box" class="chat-box">
+                <!-- Chat messages will appear here -->
+            </div>
+            <textarea id="chat-input" placeholder="Type your message here..."></textarea>
+            <button id="send-chat-btn">Send</button>
+        </div>
+        
+        <div class="upload-section">
+            <h2>Upload Transcript</h2>
+            <input type="file" id="transcript-file" accept=".txt,.md,.pdf" />
+            <button id="upload-transcript-btn">Upload</button>
+            <div id="upload-status"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
